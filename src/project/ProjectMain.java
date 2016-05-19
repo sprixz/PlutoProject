@@ -19,5 +19,4 @@ public class ProjectMain {
         System.out.println("Hello");
         System.out.println("YOLO");
     }
-    
 }
