@@ -7,7 +7,7 @@ package project;
 
 /**
  *
- * @author Varga Bence
+ * @author Varga Bence, Varga Balázs, Kicsiny Viktor
  */
 public class ProjectMain {
 
