@@ -5,7 +5,7 @@
  */
 package project;
 
-import gui.PlutoFrame;
+import project.gui.PlutoFrame;
 
 /**
  *
