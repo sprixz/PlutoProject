@@ -5,6 +5,8 @@
  */
 package project;
 
+import gui.PlutoFrame;
+
 /**
  *
  * @author Varga Bence
@@ -18,7 +20,7 @@ public class ProjectMain {
         // TODO code application logic here
         System.out.println("Hello");
         System.out.println("YOLO");
-        
+        PlutoFrame plutoFrame = new PlutoFrame();
         
     }
 }
