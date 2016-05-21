@@ -5,11 +5,13 @@
  */
 package project;
 
+import java.awt.EventQueue;
 import project.gui.PlutoFrame;
+import project.logic.DataSource;
 
 /**
  *
- * @author Varga Bence, Varga Balázs, Kicsiny Viktor
+ * @author Varga Bence
  */
 public class ProjectMain {
 
@@ -18,9 +20,16 @@ public class ProjectMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Hello");
-        System.out.println("YOLO");
-        PlutoFrame plutoFrame = new PlutoFrame();
+        DataSource.getInstance().getEntityManagerFactory().createEntityManager().close();
+        EventQueue.invokeLater(new Runnable() {
+
+            @Override
+            public void run() {
+                
+                PlutoFrame plutoFrame = new PlutoFrame();
+            }
+        });
         
     }
+    
 }
