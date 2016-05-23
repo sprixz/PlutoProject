@@ -17,15 +17,14 @@ import javax.persistence.Id;
  */
 @Entity
 public class Subject implements Serializable {
-   
-    
+
     private static final long serialVersionUID = 112331231L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String subjectName;
     private String tName;
-  
+
     public String getTeacherName() {
         return tName;
     }
@@ -34,20 +33,16 @@ public class Subject implements Serializable {
         this.tName = teacherName;
     }
     private int registered_sem;
-    
-   
-    
+
     private Subject requirement;
 
     private String room;
-   
-    
-    public static String[] fields = new String[]{"Tárgy neve", "Terem", "Nap","Időpont","Ajánlott félév" ,"Előfeltétel","Óktató neve"};
+
+    public static String[] fields = new String[]{"Tárgy neve", "Terem", "Nap", "Időpont", "Ajánlott félév", "Előfeltétel", "Óktató neve"};
 
     private String subDay;
     private String subHour;
-    
-    
+
     public String getSubjectName() {
         return subjectName;
     }
@@ -96,8 +91,6 @@ public class Subject implements Serializable {
         this.subHour = subHour;
     }
 
-    
-    
     public Integer getId() {
         return id;
     }
@@ -130,5 +123,5 @@ public class Subject implements Serializable {
     public String toString() {
         return subjectName;
     }
-    
+
 }
